@@ -9,15 +9,18 @@
 }
 else
 {
+    <ul>
     @foreach (Place place in Model)
     {
+        <li><a href='/visits/@place.Id'>@place.CityCountry</a></li>
         
-        <p>@place.CityCountry</p>
-        <p>@place.Year</p>
+        <!-- <p>@place.CityCountry</p> -->
+        <!-- <p>@place.Year</p>
         <p>@place.Landmark</p>
         <p>@place.Notes</p>
-        
+         -->
     }
+    </ul>
 }
 
 <a href= '/'>Go back</a>
